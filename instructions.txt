@@ -1,0 +1,18 @@
+-open the index.html file in your browser(chrome,firefox)
+
+-select your excel files by clicking the choose file button in the top right corner
+
+-draw shapes(circle,rectangle,polygon) on the google maps by selecting the shape from the drawing tools
+ which are shown the google maps
+
+-after drawing the shapes click on the 'Pins 1' or 'Pins 2' checkbox 
+
+-then all the markers which falls within the shapes are shown on the google maps along with their list
+
+-click on the marker to reveal its ID,Latitude,Longitude
+
+-unchecking the checkbox will remove all of that markers
+
+
+
+

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      #map-canvas {
+        width: 100%;
+        height: 750px;
+        float:left
+      }
+    </style> 
+    <title>Google Maps</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry,drawing"></script>
+
+    <link href="asserts/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="asserts/font-awesome.css"/>
+      <script src="asserts/jquery-2.1.3.js"></script>
+      <script src="asserts/bootstrap.min.js"></script>
+      <script src="asserts/jszip.js"></script>
+      <script src="asserts/shim.js"></script>
+      <script src="asserts/xlsx.js"></script>
+      <script type="text/javascript" src="googleMaps.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid" style="margin:40px;">
+        <div class="row">
+            <div class="col-md-10">
+                <div id="map-canvas"></div>
+            </div>
+            <div class="panel panel-default col-md-2 ">
+               <div class="panel-heading"><strong>Options</strong></div>
+                <div class="panel-body">
+                    <form class="form-vertical">
+                        <div class="form-group form-inline"> 
+                            <label>Pins 1 : </label>
+                           <input class="form-control" id="pins1" name="checkbox" onclick="showPins1($(this));" type="checkbox">
+                           <input type="file" id="file1"  onchange="handleFile1(this.value)" />
+                        </div>
+                        <div class="form-group form-inline"> 
+                            <label>Pins 2 : </label>
+                           <input class="form-control" id="pins2" name="checkbox" onclick="showPins2($(this));" type="checkbox">
+                           <input type="file" id="file2"  onchange="handleFile2(this.value)" />
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+        <div id="polygon1" class="row">
+            
+        </div>
+        <div id="polygon2" class="row">
+            
+        </div>
+        <div id="circle1" class="row">
+            
+        </div>
+        <div id="circle2" class="row">
+            
+        </div>
+        <div id="rectangle1" class="row">
+            
+        </div>
+        <div id="rectangle2" class="row">
+            
+        </div>
+      </div> 
+  </body>
+  
+</html>
